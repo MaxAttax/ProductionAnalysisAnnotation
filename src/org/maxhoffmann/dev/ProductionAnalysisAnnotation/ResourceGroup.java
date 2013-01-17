@@ -1,6 +1,6 @@
 package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
-import javax.persistence.CascadeType;
+// import javax.persistence.CascadeType;
 import javax.persistence.JoinColumn;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +14,6 @@ import javax.persistence.Table;
 public class ResourceGroup {
 	private Project project;
 	private long resourceGroupId;
-	private long projectId;
 	private String label;
 	private String description;
 	
@@ -22,7 +21,6 @@ public class ResourceGroup {
 	}
 	
 	public ResourceGroup(long projectId, String label, String description) {
-		this.projectId = projectId;
 		this.label = label;
 		this.description = description;	
 	}
@@ -47,6 +45,12 @@ public class ResourceGroup {
 	public void setProject(Project project) {
 		this.project = project;
 	}
+	
+	/*
+	public void setProjectId(long projectId) {
+		this.projectId = projectId;
+	}
+	*/
 	
 	/*
 	@ManyToOne(cascade = CascadeType.ALL)

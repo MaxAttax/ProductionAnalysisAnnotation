@@ -8,11 +8,8 @@ public class RunAnalysis {
 		ProjectDAO projectDAO = new ProjectDAO();
 		
 		long primaryIdProject001 = projectDAO.addProject("eins");
-		long primaryIdProject002 = projectDAO.addProject("zwei");
+		projectDAO.addProject("zwei");
 		long primaryIdProject003 = projectDAO.addProject("drei");
-		long primaryIdProject004 = projectDAO.addProject("vier");
-		long primaryIdProject005 = projectDAO.addProject("fuenf");
-		long primaryIdProject006 = projectDAO.addProject("sechs");
 				
 		projectDAO.listProjects();
 		
@@ -20,13 +17,19 @@ public class RunAnalysis {
 		
 		projectDAO.listProjects();
 		
-		projectDAO.deleteProjectByStatus("eins");
+		projectDAO.deleteProjectByStatus("zwei");
 		
 		projectDAO.listProjects();
 		
 		ResourceGroupDAO resourceGroupDAO = new ResourceGroupDAO();
 		
-		resourceGroupDAO.addResourceGroup("sawing", "R110");
+		resourceGroupDAO.addResourceGroup("sawing", "R110", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("milling", "R160", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("drilling", "R150", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("assembling", "R310", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("quality controlling", "R340", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("grinding", "R200", primaryIdProject001);
+		resourceGroupDAO.addResourceGroup("turning", "R140", primaryIdProject001);
 		
 		resourceGroupDAO.listResourceGroups();
 		
