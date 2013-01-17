@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Project")
+@Table(name="project")
 public class Project {
 	private long projectId;
 	private String status;
@@ -16,10 +16,13 @@ public class Project {
 		super();
 		this.status = status;
 	}
+	
+	public Project() {
+	}
 
 	@Id
 	@GeneratedValue
-	@Column(name="Id")
+	@Column(name="PrimaryId")
 	public long getId() {
 		return projectId;
 	}
