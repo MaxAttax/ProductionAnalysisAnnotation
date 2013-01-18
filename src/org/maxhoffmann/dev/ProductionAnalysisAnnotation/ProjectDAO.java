@@ -19,12 +19,15 @@ public class ProjectDAO {
 		Transaction transaction = null;
 		try {
 			transaction = session.beginTransaction();
-			List<Project> projects = session.createQuery("from Project").list();
-			
+			Query query = session.createQuery("from Project");
+			List<Project> projects = query.list();
+			System.out.println("\n");
 			for (Project project : projects) {
-				System.out.println("ID: " + project.getId() + "  Projektstatus: " + project.getStatus());
+				int ProjectId = project.getId();
+				String projectStatus = project.getStatus();
+				System.out.println("ID: " + ProjectId + "  Projektstatus: " + projectStatus);
 			}
-			
+			System.out.println("\n");
 			transaction.commit();
 		} catch ( HibernateException e) {
 			transaction.rollback();
@@ -34,15 +37,15 @@ public class ProjectDAO {
 		}
 	}
 	
-	public Long addProject(String projectName) {
+	public Integer addProject(String projectName) {
 		Session sessionAdd = HibernateUtil.getSessionFactory().openSession();
 		Transaction transactionAdd = null;
-		Long newProjectId = null;
+		Integer newProjectId = null;
 		try {
 			transactionAdd = sessionAdd.beginTransaction();
 			Project addStatus = new Project();
 			addStatus.setStatus(projectName);
-			newProjectId = (Long) sessionAdd.save(addStatus);
+			newProjectId = (Integer) sessionAdd.save(addStatus);
 			transactionAdd.commit();
 		} catch (HibernateException e) {
 			transactionAdd.rollback();

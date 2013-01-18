@@ -3,7 +3,20 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 public class RunAnalysis {
 
 	public static void main(String[] args) {
-		System.out.println("Let's start the Analysis!");
+		
+		System.out.println("Let's start the Analysis!\n");
+		
+		ProjectDAO projectDAO = new ProjectDAO();
+		MaterialDAO materialDAO = new MaterialDAO();
+		OrderDAO orderDAO = new OrderDAO();
+		ResourceGroupDAO resourceGroupDAO = new ResourceGroupDAO();
+		
+		projectDAO.listProjects();
+		materialDAO.listMaterial();
+		orderDAO.listOrders();
+		resourceGroupDAO.listResourceGroups();
+		
+		/*
 		
 		ProjectDAO projectDAO = new ProjectDAO();
 		
@@ -35,6 +48,8 @@ public class RunAnalysis {
 		System.out.println("Result of the returned ResourceGroup Description: '" + searchedResourceGroup + "'.\n");
 		
 		resourceGroupDAO.listResourceGroups();
+		
+		*/
 		
 	}
 	

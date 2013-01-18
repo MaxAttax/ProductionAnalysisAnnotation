@@ -3,6 +3,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 import java.util.List;
 
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.maxhoffmann.dev.util.HibernateUtil;
@@ -15,18 +16,22 @@ public class ResourceGroupDAO {
 		Transaction transaction = null;
 		try {
 			transaction = session.beginTransaction();
-			List<ResourceGroup> resourceGroups = session.createQuery("from ResourceGroup").list();
+			Query query = session.createQuery("from ResourceGroup");
+			List<ResourceGroup> resourceGroups = query.list();
 			System.out.println("\n");
 			
 			for ( ResourceGroup resourceGroup : resourceGroups ) {
 				/*
 				 * In order to list the foreign key (Primary Key of "Project" in the ResourceGroups List
-				 * the println command has to call the getId() method of the class project
+				 * the get method command has to call the getId() method of the class project
 				 */
-				System.out.println("ID: " + resourceGroup.getResourceGroupId() + "  Projekt-ID: " + resourceGroup.getProject().getId()
-						+ "  Label: " + resourceGroup.getLabel() + "  Description: " + resourceGroup.getDescription());
+				int resourceGroupId = resourceGroup.getResourceGroupId();
+				int projectId = resourceGroup.getProject().getId();
+				String label = resourceGroup.getLabel();
+				String description = resourceGroup.getDescription();
+				System.out.println("ID: " + resourceGroupId + "  Projekt-ID: " + projectId
+						+ "  Label: " + label + "  Description: " + description);
 			}
-			
 			transaction.commit();
 		} catch ( HibernateException e ) {
 			transaction.rollback();
@@ -36,7 +41,7 @@ public class ResourceGroupDAO {
 		}
 	}
 	
-	public void addResourceGroup(String description, String label, long projectId) {
+	public void addResourceGroup(String description, String label, Integer projectId) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction transaction = null;
 		try {
@@ -73,7 +78,8 @@ public class ResourceGroupDAO {
 		try {
 			transaction = session.beginTransaction();
 			
-			List<ResourceGroup> resourceGroupEntry = session.createQuery("from ResourceGroup").list();
+			Query query = session.createQuery("from ResourceGroup");
+			List<ResourceGroup> resourceGroupEntry = query.list();
 							
 			for (ResourceGroup resourceGroup : resourceGroupEntry) {
 				if (resourceGroup.getLabel().equals(label)) {

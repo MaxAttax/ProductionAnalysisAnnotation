@@ -9,12 +9,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name="project")
 public class Project {
-	private long projectId;
+	
+	private int projectId;
 	private String status;
 	
 	public Project(String status) {
 		super();
 		this.status = status;
+		
 	}
 	
 	public Project() {
@@ -22,13 +24,13 @@ public class Project {
 
 	@Id
 	@GeneratedValue
-	@Column(name="PrimaryId")
-	public long getId() {
+	@Column(name="ProjectId")
+	public int getId() {
 		return projectId;
 	}
 	
-	public void setId(long id) {
-		this.projectId = id;
+	public void setId(int projectId) {
+		this.projectId = projectId;
 	}
 	
 	@Column(name="Status", nullable=false)

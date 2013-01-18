@@ -12,14 +12,14 @@ import javax.persistence.Table;
 @Table(name="resourcegroup")
 public class ResourceGroup {
 	private Project project;
-	private long resourceGroupId;
+	private Integer resourceGroupId;
 	private String label;
 	private String description;
 	
 	public ResourceGroup() {		
 	}
 	
-	public ResourceGroup(long projectId, String label, String description) {
+	public ResourceGroup(Integer projectId, String label, String description) {
 		this.label = label;
 		this.description = description;	
 	}
@@ -27,16 +27,16 @@ public class ResourceGroup {
 	@Id
 	@GeneratedValue
 	@Column(name = "ResourceGroupId")
-	public long getResourceGroupId() {
+	public Integer getResourceGroupId() {
 		return this.resourceGroupId;
 	}
 	
-	public void setResourceGroupId(long resourceGroupId) {
+	public void setResourceGroupId(Integer resourceGroupId) {
 		this.resourceGroupId = resourceGroupId;
 	}
 	
 	@ManyToOne
-	@JoinColumn(name = "ProjectIdFK", nullable = true)
+	@JoinColumn(name = "ProjectId", nullable = true)
 	public Project getProject() {
 		return this.project;
 	}
