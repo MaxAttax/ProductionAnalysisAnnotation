@@ -1,6 +1,5 @@
 package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
-// import javax.persistence.CascadeType;
 import javax.persistence.JoinColumn;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -82,15 +81,3 @@ public class ResourceGroup {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-

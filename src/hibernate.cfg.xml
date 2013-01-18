@@ -18,7 +18,7 @@
         
         <!--
         <mapping class="org.maxhoffmann.dev.PrductionAnalysisAnnotation.Project" />
-        <mapping class="org/maxhoffmann/dev/ProductionAnalysisAnnotation/ResourceGroup" />
+        <mapping class="org.maxhoffmann.dev.PrductionAnalysisAnnotation.ResourceGroup" />
         -->
         
     </session-factory>

@@ -16,6 +16,7 @@ public class ResourceGroupDAO {
 		try {
 			transaction = session.beginTransaction();
 			List<ResourceGroup> resourceGroups = session.createQuery("from ResourceGroup").list();
+			System.out.println("\n");
 			
 			for ( ResourceGroup resourceGroup : resourceGroups ) {
 				/*
@@ -60,7 +61,46 @@ public class ResourceGroupDAO {
 		} finally {										// close the session in both cases
 			session.close();
 		}
-		
 	}
+	
+	@SuppressWarnings("unchecked")
+	public String searchResourceGroupDescription(String label) {
+		String resourceGroupDescription = null;
+		
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = null;
+		
+		try {
+			transaction = session.beginTransaction();
+			
+			List<ResourceGroup> resourceGroupEntry = session.createQuery("from ResourceGroup").list();
+							
+			for (ResourceGroup resourceGroup : resourceGroupEntry) {
+				if (resourceGroup.getLabel().equals(label)) {
+					resourceGroupDescription = resourceGroup.getDescription();
+				}
+			}
+			
+			/*
+			Query query = session.createQuery("select rg.Description from resourcegroup rg where Label := setResourceGroupLabel");
+			query.setParameter("setResourceGroupLabel", label);
+			resourceGroupDescription = (String) query.executeUpdate();
+			*/
+			
+		} catch ( HibernateException e ) {
+			transaction.rollback();						
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		
+		if (resourceGroupDescription == null) {
+			System.out.println("\nThe label expression '" + label + "' doesn't exist!");
+		} else {
+			System.out.println("\nThe label expression '" + label + "' is equivalent to the descpription '" + resourceGroupDescription + "'.");		}
+		
+		return resourceGroupDescription;
+	}
+	
 	
 }

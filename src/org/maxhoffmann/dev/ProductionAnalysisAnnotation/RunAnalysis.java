@@ -31,6 +31,9 @@ public class RunAnalysis {
 		resourceGroupDAO.addResourceGroup("grinding", "R200", primaryIdProject001);
 		resourceGroupDAO.addResourceGroup("turning", "R140", primaryIdProject001);
 		
+		String searchedResourceGroup = resourceGroupDAO.searchResourceGroupDescription("R150");
+		System.out.println("Result of the returned ResourceGroup Description: '" + searchedResourceGroup + "'.\n");
+		
 		resourceGroupDAO.listResourceGroups();
 		
 	}
