@@ -27,7 +27,6 @@ public class ProjectDAO {
 				String projectStatus = project.getStatus();
 				System.out.println("ID: " + ProjectId + "  Projektstatus: " + projectStatus);
 			}
-			System.out.println("\n");
 			transaction.commit();
 		} catch ( HibernateException e) {
 			transaction.rollback();

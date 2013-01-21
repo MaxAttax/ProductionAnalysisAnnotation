@@ -27,7 +27,6 @@ public class OrderDAO {
 				String orderType = order.getOrderType();
 				System.out.println("ID: " + orderId + "  Order No: " + orderNo + "  Order Type: " + orderType + "  Material ID (FK): " + materialId);
 			}
-			System.out.println("\n");
 			transaction.commit();
 		} catch ( HibernateException e ) {
 			transaction.rollback();

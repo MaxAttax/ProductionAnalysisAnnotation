@@ -13,7 +13,7 @@
         <property name="hibernate.connection.username">dataintegrator</property>
         <property name="hibernate.connection.password">@imazlw/xcpb1</property>
         <property name="connection.pool_size">1</property>
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
         <property name="hbm2ddl.auto">validate</property>
         
         <!--

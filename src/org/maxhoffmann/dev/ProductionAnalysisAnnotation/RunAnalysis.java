@@ -1,9 +1,14 @@
 package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
+import org.maxhoffmann.dev.Chain.ProcessChainGeneration;
+
+import java.util.List;
+
+
 public class RunAnalysis {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("Let's start the Analysis!\n");
 		
 		ProjectDAO projectDAO = new ProjectDAO();
@@ -11,13 +16,17 @@ public class RunAnalysis {
 		OrderDAO orderDAO = new OrderDAO();
 		ResourceGroupDAO resourceGroupDAO = new ResourceGroupDAO();
 		
+		ProductionOrderHistoryDAO productionOrderHistoryDAO = new ProductionOrderHistoryDAO();
+		List<ProductionOrderHistory> pohResult = productionOrderHistoryDAO.listProductionOrderHistories();
+		ProcessChainGeneration generator = new ProcessChainGeneration();
+		generator.ProcessChainBuild(pohResult);
+		
 		projectDAO.listProjects();
 		materialDAO.listMaterial();
 		orderDAO.listOrders();
 		resourceGroupDAO.listResourceGroups();
 		
 		/*
-		
 		ProjectDAO projectDAO = new ProjectDAO();
 		
 		long primaryIdProject001 = projectDAO.addProject("eins");
@@ -48,7 +57,6 @@ public class RunAnalysis {
 		System.out.println("Result of the returned ResourceGroup Description: '" + searchedResourceGroup + "'.\n");
 		
 		resourceGroupDAO.listResourceGroups();
-		
 		*/
 		
 	}

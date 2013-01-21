@@ -26,7 +26,6 @@ public class MaterialDAO {
 				String description = material.getDescription();
 				System.out.println("ID: " + materialId + "  Material No: " + materialNo + "  Description: " + description);
 			}
-			System.out.println("\n");
 			transaction.commit();
 		} catch ( HibernateException e ) {
 			transaction.rollback();
