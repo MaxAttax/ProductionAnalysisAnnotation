@@ -1818,3 +1818,283 @@
 21/Jan/2013, 19:05:14 - 922 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
 21/Jan/2013, 19:05:14 - 922 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
 21/Jan/2013, 19:05:14 - 922 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
+22/Jan/2013, 09:50:22 - 0 [main] INFO   org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.3.1.GA
+22/Jan/2013, 09:50:22 - 15 [main] INFO   org.hibernate.cfg.Environment - Hibernate 3.2.5
+22/Jan/2013, 09:50:22 - 15 [main] INFO   org.hibernate.cfg.Environment - hibernate.properties not found
+22/Jan/2013, 09:50:22 - 15 [main] INFO   org.hibernate.cfg.Environment - Bytecode provider name : cglib
+22/Jan/2013, 09:50:22 - 31 [main] INFO   org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+22/Jan/2013, 09:50:22 - 78 [main] INFO   org.hibernate.cfg.Configuration - configuring from resource: /hibernate.cfg.xml
+22/Jan/2013, 09:50:22 - 78 [main] INFO   org.hibernate.cfg.Configuration - Configuration resource: /hibernate.cfg.xml
+22/Jan/2013, 09:50:22 - 140 [main] INFO   org.hibernate.cfg.Configuration - Configured SessionFactory: null
+22/Jan/2013, 09:50:22 - 140 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Mapping package org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 09:50:22 - 171 [main] WARN   org.hibernate.cfg.AnnotationBinder - Package not found or wo package-info.java: org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 09:50:22 - 218 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project
+22/Jan/2013, 09:50:22 - 249 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project on table project
+22/Jan/2013, 09:50:22 - 281 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material
+22/Jan/2013, 09:50:22 - 281 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material on table material
+22/Jan/2013, 09:50:22 - 296 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order
+22/Jan/2013, 09:50:22 - 296 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order on table order
+22/Jan/2013, 09:50:22 - 296 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup
+22/Jan/2013, 09:50:22 - 296 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup on table resourcegroup
+22/Jan/2013, 09:50:22 - 312 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory
+22/Jan/2013, 09:50:22 - 312 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory on table productionorderhistory
+22/Jan/2013, 09:50:22 - 359 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+22/Jan/2013, 09:50:22 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+22/Jan/2013, 09:50:22 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 1
+22/Jan/2013, 09:50:22 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: false
+22/Jan/2013, 09:50:22 - 374 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_fp_max
+22/Jan/2013, 09:50:22 - 374 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=dataintegrator, password=****}
+22/Jan/2013, 09:50:22 - 608 [main] INFO   org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.28
+22/Jan/2013, 09:50:22 - 608 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+22/Jan/2013, 09:50:22 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Query cache: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Cache provider: org.hibernate.cache.NoCacheProvider
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Statistics: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+22/Jan/2013, 09:50:22 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+22/Jan/2013, 09:50:22 - 671 [main] INFO   org.hibernate.impl.SessionFactoryImpl - building session factory
+22/Jan/2013, 09:50:22 - 873 [main] INFO   org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+22/Jan/2013, 09:50:22 - 889 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - Running schema validator
+22/Jan/2013, 09:50:22 - 889 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - fetching database metadata
+22/Jan/2013, 09:50:22 - 921 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.order
+22/Jan/2013, 09:50:22 - 921 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [orderno, ordertype, orderid, materialid]
+22/Jan/2013, 09:50:22 - 937 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.material
+22/Jan/2013, 09:50:22 - 937 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [description, materialno, materialid]
+22/Jan/2013, 09:50:23 - 984 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.productionorderhistory
+22/Jan/2013, 09:50:23 - 984 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [operationtime, resourcegroupid, startproduction, workplanno, orderid, productionorderhistoryid]
+22/Jan/2013, 09:50:23 - 999 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.project
+22/Jan/2013, 09:50:23 - 999 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
+22/Jan/2013, 09:50:23 - 1015 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
+22/Jan/2013, 09:50:23 - 1015 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
+22/Jan/2013, 14:28:07 - 0 [main] INFO   org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.3.1.GA
+22/Jan/2013, 14:28:07 - 0 [main] INFO   org.hibernate.cfg.Environment - Hibernate 3.2.5
+22/Jan/2013, 14:28:07 - 0 [main] INFO   org.hibernate.cfg.Environment - hibernate.properties not found
+22/Jan/2013, 14:28:07 - 0 [main] INFO   org.hibernate.cfg.Environment - Bytecode provider name : cglib
+22/Jan/2013, 14:28:07 - 16 [main] INFO   org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+22/Jan/2013, 14:28:07 - 47 [main] INFO   org.hibernate.cfg.Configuration - configuring from resource: /hibernate.cfg.xml
+22/Jan/2013, 14:28:07 - 47 [main] INFO   org.hibernate.cfg.Configuration - Configuration resource: /hibernate.cfg.xml
+22/Jan/2013, 14:28:08 - 110 [main] INFO   org.hibernate.cfg.Configuration - Configured SessionFactory: null
+22/Jan/2013, 14:28:08 - 110 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Mapping package org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:28:08 - 125 [main] WARN   org.hibernate.cfg.AnnotationBinder - Package not found or wo package-info.java: org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:28:08 - 156 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project
+22/Jan/2013, 14:28:08 - 203 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project on table project
+22/Jan/2013, 14:28:08 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material
+22/Jan/2013, 14:28:08 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material on table material
+22/Jan/2013, 14:28:08 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order
+22/Jan/2013, 14:28:08 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order on table order
+22/Jan/2013, 14:28:08 - 250 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup
+22/Jan/2013, 14:28:08 - 250 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup on table resourcegroup
+22/Jan/2013, 14:28:08 - 250 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory
+22/Jan/2013, 14:28:08 - 250 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory on table productionorderhistory
+22/Jan/2013, 14:28:08 - 297 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+22/Jan/2013, 14:28:08 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+22/Jan/2013, 14:28:08 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 1
+22/Jan/2013, 14:28:08 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: false
+22/Jan/2013, 14:28:08 - 312 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_fp_max
+22/Jan/2013, 14:28:08 - 312 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=dataintegrator, password=****}
+22/Jan/2013, 14:28:08 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.28
+22/Jan/2013, 14:28:08 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+22/Jan/2013, 14:28:08 - 515 [main] INFO   org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+22/Jan/2013, 14:28:08 - 515 [main] INFO   org.hibernate.transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+22/Jan/2013, 14:28:08 - 515 [main] INFO   org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Query cache: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Cache provider: org.hibernate.cache.NoCacheProvider
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Statistics: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+22/Jan/2013, 14:28:08 - 531 [main] INFO   org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+22/Jan/2013, 14:28:08 - 546 [main] INFO   org.hibernate.impl.SessionFactoryImpl - building session factory
+22/Jan/2013, 14:28:08 - 749 [main] INFO   org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+22/Jan/2013, 14:28:08 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - Running schema validator
+22/Jan/2013, 14:28:08 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - fetching database metadata
+22/Jan/2013, 14:28:08 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.order
+22/Jan/2013, 14:28:08 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [orderno, ordertype, orderid, materialid]
+22/Jan/2013, 14:28:08 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.material
+22/Jan/2013, 14:28:08 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [description, materialno, materialid]
+22/Jan/2013, 14:28:08 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.productionorderhistory
+22/Jan/2013, 14:28:08 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [operationtime, resourcegroupid, startproduction, workplanno, orderid, productionorderhistoryid]
+22/Jan/2013, 14:28:08 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.project
+22/Jan/2013, 14:28:08 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
+22/Jan/2013, 14:28:08 - 796 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
+22/Jan/2013, 14:28:08 - 796 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
+22/Jan/2013, 14:28:39 - 0 [main] INFO   org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.3.1.GA
+22/Jan/2013, 14:28:39 - 16 [main] INFO   org.hibernate.cfg.Environment - Hibernate 3.2.5
+22/Jan/2013, 14:28:39 - 16 [main] INFO   org.hibernate.cfg.Environment - hibernate.properties not found
+22/Jan/2013, 14:28:39 - 16 [main] INFO   org.hibernate.cfg.Environment - Bytecode provider name : cglib
+22/Jan/2013, 14:28:39 - 16 [main] INFO   org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+22/Jan/2013, 14:28:39 - 63 [main] INFO   org.hibernate.cfg.Configuration - configuring from resource: /hibernate.cfg.xml
+22/Jan/2013, 14:28:39 - 63 [main] INFO   org.hibernate.cfg.Configuration - Configuration resource: /hibernate.cfg.xml
+22/Jan/2013, 14:28:39 - 109 [main] INFO   org.hibernate.cfg.Configuration - Configured SessionFactory: null
+22/Jan/2013, 14:28:39 - 109 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Mapping package org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:28:40 - 141 [main] WARN   org.hibernate.cfg.AnnotationBinder - Package not found or wo package-info.java: org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:28:40 - 172 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project
+22/Jan/2013, 14:28:40 - 203 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project on table project
+22/Jan/2013, 14:28:40 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material
+22/Jan/2013, 14:28:40 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material on table material
+22/Jan/2013, 14:28:40 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order
+22/Jan/2013, 14:28:40 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order on table order
+22/Jan/2013, 14:28:40 - 250 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup
+22/Jan/2013, 14:28:40 - 250 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup on table resourcegroup
+22/Jan/2013, 14:28:40 - 250 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory
+22/Jan/2013, 14:28:40 - 250 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory on table productionorderhistory
+22/Jan/2013, 14:28:40 - 281 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+22/Jan/2013, 14:28:40 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+22/Jan/2013, 14:28:40 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 1
+22/Jan/2013, 14:28:40 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: false
+22/Jan/2013, 14:28:40 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_fp_max
+22/Jan/2013, 14:28:40 - 297 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=dataintegrator, password=****}
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.28
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+22/Jan/2013, 14:28:40 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query cache: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Cache provider: org.hibernate.cache.NoCacheProvider
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Statistics: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+22/Jan/2013, 14:28:40 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+22/Jan/2013, 14:28:40 - 531 [main] INFO   org.hibernate.impl.SessionFactoryImpl - building session factory
+22/Jan/2013, 14:28:40 - 733 [main] INFO   org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+22/Jan/2013, 14:28:40 - 733 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - Running schema validator
+22/Jan/2013, 14:28:40 - 733 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - fetching database metadata
+22/Jan/2013, 14:28:40 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.order
+22/Jan/2013, 14:28:40 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [orderno, ordertype, orderid, materialid]
+22/Jan/2013, 14:28:40 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.material
+22/Jan/2013, 14:28:40 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [description, materialno, materialid]
+22/Jan/2013, 14:28:40 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.productionorderhistory
+22/Jan/2013, 14:28:40 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [operationtime, resourcegroupid, startproduction, workplanno, orderid, productionorderhistoryid]
+22/Jan/2013, 14:28:40 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.project
+22/Jan/2013, 14:28:40 - 765 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
+22/Jan/2013, 14:28:40 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
+22/Jan/2013, 14:28:40 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
+22/Jan/2013, 14:30:18 - 0 [main] INFO   org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.3.1.GA
+22/Jan/2013, 14:30:18 - 16 [main] INFO   org.hibernate.cfg.Environment - Hibernate 3.2.5
+22/Jan/2013, 14:30:18 - 16 [main] INFO   org.hibernate.cfg.Environment - hibernate.properties not found
+22/Jan/2013, 14:30:18 - 16 [main] INFO   org.hibernate.cfg.Environment - Bytecode provider name : cglib
+22/Jan/2013, 14:30:18 - 16 [main] INFO   org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+22/Jan/2013, 14:30:18 - 47 [main] INFO   org.hibernate.cfg.Configuration - configuring from resource: /hibernate.cfg.xml
+22/Jan/2013, 14:30:18 - 47 [main] INFO   org.hibernate.cfg.Configuration - Configuration resource: /hibernate.cfg.xml
+22/Jan/2013, 14:30:18 - 109 [main] INFO   org.hibernate.cfg.Configuration - Configured SessionFactory: null
+22/Jan/2013, 14:30:18 - 109 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Mapping package org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:30:18 - 125 [main] WARN   org.hibernate.cfg.AnnotationBinder - Package not found or wo package-info.java: org.maxhoffmann.dev.ProductionAnalysisAnnotation
+22/Jan/2013, 14:30:18 - 156 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project
+22/Jan/2013, 14:30:19 - 187 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project on table project
+22/Jan/2013, 14:30:19 - 218 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material
+22/Jan/2013, 14:30:19 - 218 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material on table material
+22/Jan/2013, 14:30:19 - 218 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order
+22/Jan/2013, 14:30:19 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order on table order
+22/Jan/2013, 14:30:19 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup
+22/Jan/2013, 14:30:19 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup on table resourcegroup
+22/Jan/2013, 14:30:19 - 234 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory
+22/Jan/2013, 14:30:19 - 234 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory on table productionorderhistory
+22/Jan/2013, 14:30:19 - 281 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+22/Jan/2013, 14:30:19 - 281 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+22/Jan/2013, 14:30:19 - 281 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 1
+22/Jan/2013, 14:30:19 - 281 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: false
+22/Jan/2013, 14:30:19 - 296 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_fp_max
+22/Jan/2013, 14:30:19 - 296 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=dataintegrator, password=****}
+22/Jan/2013, 14:30:19 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.28
+22/Jan/2013, 14:30:19 - 499 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Query cache: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Cache provider: org.hibernate.cache.NoCacheProvider
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Statistics: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+22/Jan/2013, 14:30:19 - 515 [main] INFO   org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+22/Jan/2013, 14:30:19 - 546 [main] INFO   org.hibernate.impl.SessionFactoryImpl - building session factory
+22/Jan/2013, 14:30:19 - 733 [main] INFO   org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+22/Jan/2013, 14:30:19 - 733 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - Running schema validator
+22/Jan/2013, 14:30:19 - 733 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - fetching database metadata
+22/Jan/2013, 14:30:19 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.order
+22/Jan/2013, 14:30:19 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [orderno, ordertype, orderid, materialid]
+22/Jan/2013, 14:30:19 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.material
+22/Jan/2013, 14:30:19 - 749 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [description, materialno, materialid]
+22/Jan/2013, 14:30:19 - 764 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.productionorderhistory
+22/Jan/2013, 14:30:19 - 764 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [operationtime, resourcegroupid, startproduction, workplanno, orderid, productionorderhistoryid]
+22/Jan/2013, 14:30:19 - 764 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.project
+22/Jan/2013, 14:30:19 - 764 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
+22/Jan/2013, 14:30:19 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
+22/Jan/2013, 14:30:19 - 780 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
