@@ -7,7 +7,7 @@ import org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory;
 
 public class ProcessChainTimeGeneration {
 	
-	public ProcessChainTimeGeneration(List<ProductionOrderHistory> pohResult) {
+	public ProcessChainTimeGeneration() {
 	}
 	
 	public ArrayList<String> GenerateChainTimes(List<ProductionOrderHistory> pohInput) {
@@ -46,9 +46,10 @@ public class ProcessChainTimeGeneration {
 			}
 		}
 		
-		for ( j = 0; j < chainTimes.size(); j++ ) {
+		for ( j = 0; j < 100/*chainTimes.size()*/; j++ ) {
 			System.out.println((j+1) + ".\t Prozesszeiten-Kette: \t" + chainTimes.get(j) );
 		}
+		System.out.println("\n");
 		
 		return chainTimes;
 	}

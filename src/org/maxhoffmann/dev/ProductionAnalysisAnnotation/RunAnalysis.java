@@ -3,6 +3,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 import org.maxhoffmann.dev.Chain.ProcessChainGeneration;
 import org.maxhoffmann.dev.Chain.ProcessChainCounter;
 import org.maxhoffmann.dev.Chain.ProcessChainTimeGeneration;
+import org.maxhoffmann.dev.Chain.ProcessChainTimeOperations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,13 +25,14 @@ public class RunAnalysis {
 		
 		ProcessChainGeneration generator = new ProcessChainGeneration();
 		ArrayList<String> generatedChains = generator.ProcessChainBuild(pohResult);
-		ProcessChainCounter chainCounter = new ProcessChainCounter(generatedChains);
+		ProcessChainCounter chainCounter = new ProcessChainCounter();
 		chainCounter.ProcessChainOperations(generatedChains);
 		
-		ProcessChainTimeGeneration timeGenerator = new ProcessChainTimeGeneration(pohResult);
+		ProcessChainTimeGeneration timeGenerator = new ProcessChainTimeGeneration();
 		ArrayList<String> chainTimes = timeGenerator.GenerateChainTimes(pohResult);
 		
-		
+		ProcessChainTimeOperations timeOperations = new ProcessChainTimeOperations();
+		timeOperations.ProcessChainTimeOperations(generatedChains, chainTimes);
 		
 		projectDAO.listProjects();
 		materialDAO.listMaterial();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ProcessChainCounter {
 	
-	public ProcessChainCounter(ArrayList<String> generatedChains) {
+	public ProcessChainCounter() {
 	}
 	
 	public void ProcessChainOperations(ArrayList<String> generatedChains) {
@@ -76,8 +76,5 @@ public class ProcessChainCounter {
 					+ countSubChainsDiff.get(n) + "\t\t"
 					+ processChains.get(n) );
 		}
-	}
-	
-	
+	}	
 }
-
