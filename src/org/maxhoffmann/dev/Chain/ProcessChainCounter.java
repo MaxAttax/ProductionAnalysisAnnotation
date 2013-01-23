@@ -10,6 +10,8 @@ public class ProcessChainCounter {
 	public void ProcessChainOperations(ArrayList<String> generatedChains) {
 		
 		ArrayList<Integer> countProcessChains = new ArrayList<Integer>();
+		ArrayList<Integer> countLengthProcessChains = new ArrayList<Integer>();
+		
 		ArrayList<Integer> countContainProcessChains = new ArrayList<Integer>();
 		ArrayList<Integer> countSubProcessChains = new ArrayList<Integer>();
 		ArrayList<Integer> countSubChainsDiff = new ArrayList<Integer>();
@@ -20,6 +22,20 @@ public class ProcessChainCounter {
 		listedChains = generatedChains;
 		int n = 0;
 		
+		int maxChainLength = 0;
+		for ( int m = 0; m < listedChains.size(); m++ ) {
+			int currentChainLength = listedChains.get(m).length();
+			if ( currentChainLength > maxChainLength ) {
+				maxChainLength = currentChainLength;
+			}
+		}
+		
+		int maxProcessChainLength = ( maxChainLength + 1 ) / 5;
+		System.out.println("Maximum Chain Length: " + maxProcessChainLength + "\n");
+		
+		for ( int c = 0; c < maxProcessChainLength; c++ ) {
+			countLengthProcessChains.add(c, 0);
+		}
 		
 		for ( int m = 0; m < listedChains.size(); m++ ) {
 			if ( processChains.contains(listedChains.get(m)) == false ) {
@@ -39,6 +55,18 @@ public class ProcessChainCounter {
 			countProcessChains.add(n, counter);
 		}
 		
+		
+		for ( int m = 0; m < listedChains.size(); m++ ) {
+			int index = ( ( listedChains.get(m).length() + 1 ) / 5 ) - 1;
+			countLengthProcessChains.set(index, countLengthProcessChains.get(index) + 1);
+		}
+		
+		
+		System.out.println("Anzahl der Prozessketten:\n");
+		for (int c = 0; c < maxProcessChainLength; c++) {
+			System.out.println((c+1) + "er-Kette:\t" + countLengthProcessChains.get(c));
+		}
+		System.out.println("\n");		
 		
 		for ( n = 0; n < processChains.size(); n++ ) {
 			int counterContain = 0;

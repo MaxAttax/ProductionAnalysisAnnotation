@@ -19,8 +19,13 @@ public class RunAnalysis {
 		MaterialDAO materialDAO = new MaterialDAO();
 		OrderDAO orderDAO = new OrderDAO();
 		ResourceGroupDAO resourceGroupDAO = new ResourceGroupDAO();
-		
 		ProductionOrderHistoryDAO productionOrderHistoryDAO = new ProductionOrderHistoryDAO();
+		
+		projectDAO.listProjects();
+		materialDAO.listMaterial();
+		orderDAO.listOrders();
+		resourceGroupDAO.listResourceGroups();
+		
 		List<ProductionOrderHistory> pohResult = productionOrderHistoryDAO.listProductionOrderHistories();
 		
 		ProcessChainGeneration generator = new ProcessChainGeneration();
@@ -32,12 +37,7 @@ public class RunAnalysis {
 		ArrayList<String> chainTimes = timeGenerator.GenerateChainTimes(pohResult);
 		
 		ProcessChainTimeOperations timeOperations = new ProcessChainTimeOperations();
-		timeOperations.ProcessChainTimeOperations(generatedChains, chainTimes);
-		
-		projectDAO.listProjects();
-		materialDAO.listMaterial();
-		orderDAO.listOrders();
-		resourceGroupDAO.listResourceGroups();
+		timeOperations.chainTimeOperations(generatedChains, chainTimes);
 		
 		/*
 		ProjectDAO projectDAO = new ProjectDAO();

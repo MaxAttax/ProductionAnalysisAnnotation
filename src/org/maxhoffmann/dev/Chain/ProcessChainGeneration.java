@@ -23,7 +23,7 @@ public class ProcessChainGeneration {
 			orders.add(poh.getOrder().getOrderNo());
 		}
 		
-		System.out.println("\n\nProzessketten:\n");
+		System.out.println("\n\nProzessketten-Analyse:\n\n");
 		
 		ArrayList<String> listedChains = new ArrayList<String>();
 		int j = 0;
