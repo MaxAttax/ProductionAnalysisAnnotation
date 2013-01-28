@@ -33,11 +33,13 @@ public class RunAnalysis {
 		ProcessChainCounter chainCounter = new ProcessChainCounter();
 		chainCounter.ProcessChainOperations(generatedChains);
 		
+		/*
 		ProcessChainTimeGeneration timeGenerator = new ProcessChainTimeGeneration();
 		ArrayList<String> chainTimes = timeGenerator.GenerateChainTimes(pohResult);
 		
 		ProcessChainTimeOperations timeOperations = new ProcessChainTimeOperations();
 		timeOperations.chainTimeOperations(generatedChains, chainTimes);
+		*/
 		
 		/*
 		ProjectDAO projectDAO = new ProjectDAO();
