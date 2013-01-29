@@ -2,6 +2,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -9,6 +10,8 @@ import org.hibernate.Transaction;
 import org.maxhoffmann.dev.util.HibernateUtil;
 
 public class ResourceGroupDAO {
+	
+	private static final Logger LOGGER = Logger.getLogger(ResourceGroupDAO.class);
 	
 	@SuppressWarnings("unchecked")
 	public void listResourceGroups() {
@@ -18,7 +21,7 @@ public class ResourceGroupDAO {
 			transaction = session.beginTransaction();
 			Query query = session.createQuery("from ResourceGroup");
 			List<ResourceGroup> resourceGroups = query.list();
-			System.out.println("\n");
+			LOGGER.info("\n");
 			
 			for ( ResourceGroup resourceGroup : resourceGroups ) {
 				/*
@@ -29,7 +32,7 @@ public class ResourceGroupDAO {
 				int projectId = resourceGroup.getProject().getId();
 				String label = resourceGroup.getLabel();
 				String description = resourceGroup.getDescription();
-				System.out.println("ID: " + resourceGroupId + "  Projekt-ID: " + projectId
+				LOGGER.info("ID: " + resourceGroupId + "  Projekt-ID: " + projectId
 						+ "  Label: " + label + "  Description: " + description);
 			}
 			transaction.commit();
@@ -101,9 +104,9 @@ public class ResourceGroupDAO {
 		}
 		
 		if (resourceGroupDescription == null) {
-			System.out.println("\nThe label expression '" + label + "' doesn't exist!");
+			LOGGER.info("\nThe label expression '" + label + "' doesn't exist!");
 		} else {
-			System.out.println("\nThe label expression '" + label + "' is equivalent to the descpription '" + resourceGroupDescription + "'.");		}
+			LOGGER.info("\nThe label expression '" + label + "' is equivalent to the descpription '" + resourceGroupDescription + "'.");		}
 		
 		return resourceGroupDescription;
 	}

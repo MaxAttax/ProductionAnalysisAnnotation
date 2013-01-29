@@ -2,6 +2,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -13,6 +14,8 @@ import org.maxhoffmann.dev.util.HibernateUtil;
 
 public class ProjectDAO {
 	
+	private static final Logger LOGGER = Logger.getLogger(ProjectDAO.class);
+	
 	@SuppressWarnings("unchecked")
 	public void listProjects() {
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -21,11 +24,11 @@ public class ProjectDAO {
 			transaction = session.beginTransaction();
 			Query query = session.createQuery("from Project");
 			List<Project> projects = query.list();
-			System.out.println("\n");
+			LOGGER.info("\n");
 			for (Project project : projects) {
 				int ProjectId = project.getId();
 				String projectStatus = project.getStatus();
-				System.out.println("ID: " + ProjectId + "  Projektstatus: " + projectStatus);
+				LOGGER.info("ID: " + ProjectId + "  Projektstatus: " + projectStatus);
 			}
 			transaction.commit();
 		} catch ( HibernateException e) {
@@ -80,7 +83,7 @@ public class ProjectDAO {
 			Query query = session.createQuery(hql);
 			query.setParameter("setProjectStatus", statusToDelete);
 			query.executeUpdate();
-			System.out.println("SQL Query: " + hql);
+			LOGGER.info("SQL Query: " + hql);
 			transaction.commit();
 		} catch ( HibernateException e ) {
 			transaction.rollback();

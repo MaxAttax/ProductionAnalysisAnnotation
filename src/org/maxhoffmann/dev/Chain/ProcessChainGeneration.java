@@ -1,5 +1,6 @@
 package org.maxhoffmann.dev.Chain;
 
+import org.apache.log4j.Logger;
 import org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory;
 
 import java.util.ArrayList;
@@ -7,6 +8,8 @@ import java.util.List;
 
 
 public class ProcessChainGeneration {
+	
+	private static final Logger LOGGER = Logger.getLogger(ProcessChainGeneration.class);
 
 	public ProcessChainGeneration() {
 	}
@@ -23,7 +26,7 @@ public class ProcessChainGeneration {
 			orders.add(poh.getOrder().getOrderNo());
 		}
 		
-		System.out.println("\n\nProzessketten-Analyse:\n\n");
+		LOGGER.info("\n\nProzessketten-Analyse:\n\n");
 		
 		ArrayList<String> listedChains = new ArrayList<String>();
 		int j = 0;
@@ -68,7 +71,7 @@ public class ProcessChainGeneration {
 		
 		for ( n = 0; n < processChains.size(); n++ ) {
 			mapProcessChains.put(countProcessChains.get(n),processChains.get(n));
-			System.out.println(mapProcessChains.get(n));
+			LOGGER.info(mapProcessChains.get(n));
 		}
 		*/
 		

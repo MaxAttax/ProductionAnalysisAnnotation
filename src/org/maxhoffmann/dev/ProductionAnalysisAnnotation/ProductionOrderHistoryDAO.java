@@ -2,6 +2,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
 import java.util.List;
 
+// import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -9,6 +10,8 @@ import org.hibernate.Transaction;
 import org.maxhoffmann.dev.util.HibernateUtil;
 
 public class ProductionOrderHistoryDAO {
+	
+	// private static final Logger LOGGER = Logger.getLogger(ProductionOrderHistoryDAO.class);
 	
 	@SuppressWarnings("unchecked")
 	public List<ProductionOrderHistory> listProductionOrderHistories() {
@@ -18,11 +21,11 @@ public class ProductionOrderHistoryDAO {
 		try {
 			transaction = session.beginTransaction();
 			Query query = session.createQuery("from ProductionOrderHistory");
-			// query.setMaxResults(100);
+			query.setMaxResults(1000);
 			List<ProductionOrderHistory> productionOrderHistories = query.list();
 			productionOrderResult = productionOrderHistories;
 			/*
-			System.out.println("\n");
+			LOGGER.info("\n");
 			for ( ProductionOrderHistory productionOrderHistory : productionOrderHistories ) {
 				int productionOrderHistoryId = productionOrderHistory.getProductionOrderHistoryId();
 				int workplanNo = productionOrderHistory.getWorkplanNo();
@@ -31,7 +34,7 @@ public class ProductionOrderHistoryDAO {
 				int orderId = productionOrderHistory.getOrder().getOrderId();
 				int resourceGroupId = productionOrderHistory.getResourceGroup().getResourceGroupId();
 				String resourceGroupLabel = productionOrderHistory.getResourceGroup().getLabel();
-				System.out.println("ID: " + productionOrderHistoryId 
+				LOGGER.info("ID: " + productionOrderHistoryId 
 						+ "  Workplan No.: " + workplanNo 
 						+ "  Start Production: " + startProduction
 						+ "  Operation Time: " + operationTime 
@@ -40,7 +43,7 @@ public class ProductionOrderHistoryDAO {
 						+ "  ResourceGroup-ID: " + resourceGroupId
 						+ "  ResourceGroup-Label: " + resourceGroupLabel);
 			}
-			System.out.println("\n");
+			LOGGER.info("\n");
 			*/
 		} catch ( HibernateException e ) {
 			transaction.rollback();

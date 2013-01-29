@@ -3,9 +3,12 @@ package org.maxhoffmann.dev.Chain;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory;
 
 public class ProcessChainTimeGeneration {
+	
+	private static final Logger LOGGER = Logger.getLogger(ProcessChainTimeGeneration.class);
 	
 	public ProcessChainTimeGeneration() {
 	}
@@ -22,7 +25,7 @@ public class ProcessChainTimeGeneration {
 			processTimes.add(poh.getOperationTime());
 		}
 
-		System.out.println("\n\nProzessketten-Operation-Times:\n");
+		LOGGER.info("\n\nProzessketten-Operation-Times:\n");
 		
 		ArrayList<String> chainTimes = new ArrayList<String>();
 		
@@ -47,9 +50,9 @@ public class ProcessChainTimeGeneration {
 		}
 		
 		for ( j = 0; j < 100/*chainTimes.size()*/; j++ ) {
-			System.out.println((j+1) + ".\t Prozesszeiten-Kette: \t" + chainTimes.get(j) );
+			LOGGER.info((j+1) + ".\t Prozesszeiten-Kette: \t" + chainTimes.get(j) );
 		}
-		System.out.println("\n");
+		LOGGER.info("\n");
 		
 		return chainTimes;
 	}

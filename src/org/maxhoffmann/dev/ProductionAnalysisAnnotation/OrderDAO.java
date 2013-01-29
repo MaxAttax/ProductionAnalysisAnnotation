@@ -2,6 +2,7 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -9,6 +10,8 @@ import org.hibernate.Transaction;
 import org.maxhoffmann.dev.util.HibernateUtil;
 
 public class OrderDAO {
+	
+	private static final Logger LOGGER = Logger.getLogger(OrderDAO.class);
 	
 	@SuppressWarnings("unchecked")
 	public void listOrders() {
@@ -19,13 +22,13 @@ public class OrderDAO {
 			Query query = session.createQuery("from Order");
 			query.setMaxResults(10);
 			List<Order> orders = query.list();
-			System.out.println("\n");
+			LOGGER.info("\n");
 			for ( Order order : orders ) {
 				Integer orderId = order.getOrderId();
 				Integer materialId = order.getMaterial().getId();
 				Integer orderNo = order.getOrderNo();
 				String orderType = order.getOrderType();
-				System.out.println("ID: " + orderId + "  Order No: " + orderNo + "  Order Type: " + orderType + "  Material ID (FK): " + materialId);
+				LOGGER.info("ID: " + orderId + "  Order No: " + orderNo + "  Order Type: " + orderType + "  Material ID (FK): " + materialId);
 			}
 			transaction.commit();
 		} catch ( HibernateException e ) {

@@ -2,7 +2,11 @@ package org.maxhoffmann.dev.Chain;
 
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 public class ProcessChainTimeOperations {
+	
+	private static final Logger LOGGER = Logger.getLogger(ProcessChainTimeOperations.class);
 	
 	public ProcessChainTimeOperations() {
 	}
@@ -15,7 +19,7 @@ public class ProcessChainTimeOperations {
 		chainTimes = generatedChainTimes;
 		
 		for ( int i = 0; i < 100 /*chainTimes.size()*/; i++ ) {
-			System.out.println((i+1) + ".\tProzesskette:\t" + processChains.get(i) + "\n\tProzesszeiten:\t" + chainTimes.get(i) + "\n");
+			LOGGER.info((i+1) + ".\tProzesskette:\t" + processChains.get(i) + "\n\tProzesszeiten:\t" + chainTimes.get(i) + "\n");
 		}
 	
 	}	
