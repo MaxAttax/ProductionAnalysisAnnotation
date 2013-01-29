@@ -21,7 +21,7 @@ public class ProductionOrderHistoryDAO {
 		try {
 			transaction = session.beginTransaction();
 			Query query = session.createQuery("from ProductionOrderHistory");
-			query.setMaxResults(1000);
+			query.setMaxResults(600);
 			List<ProductionOrderHistory> productionOrderHistories = query.list();
 			productionOrderResult = productionOrderHistories;
 			/*
