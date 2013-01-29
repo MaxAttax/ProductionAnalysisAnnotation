@@ -176,6 +176,10 @@ public class ProcessChainCounter {
 		
 		LOGGER.info("Actual Percentage Index: " + (actualPercentageIndex + 1) + "\n");
 		
+		/*
+		 * 
+		 */
+		
 		for ( n = 0; n < processChains.size(); n++ ) {
 			int chainLength = (processChains.get(n).length() + 1) / 5;
 			if ( chainLength == (actualPercentageIndex + 1) ) {
