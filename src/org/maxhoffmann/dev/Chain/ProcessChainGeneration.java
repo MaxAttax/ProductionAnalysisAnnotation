@@ -13,6 +13,12 @@ public class ProcessChainGeneration {
 
 	public ProcessChainGeneration() {
 	}
+	
+	/**
+	 * Generation of process chain on basis of the production order history data.
+	 * @param pohInput
+	 * @return ListofProcessChains
+	 */
 
 	public ArrayList<String> ProcessChainBuild(List<ProductionOrderHistory> pohInput) {
 		

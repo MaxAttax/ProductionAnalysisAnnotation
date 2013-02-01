@@ -2,11 +2,16 @@ package org.maxhoffmann.dev.ProductionAnalysisAnnotation;
 
 import org.maxhoffmann.dev.Chain.ProcessChainGeneration;
 import org.maxhoffmann.dev.Chain.ProcessChainCounter;
+import org.maxhoffmann.dev.Chain.ProcessChainMainOperations;
+import org.maxhoffmann.dev.Chain.ProcessChainReconfiguration;
+import org.maxhoffmann.dev.object.ProcessChainEvaluation;
+import org.maxhoffmann.dev.object.ProcessChainObject;
 // import org.maxhoffmann.dev.Chain.ProcessChainTimeGeneration;
 // import org.maxhoffmann.dev.Chain.ProcessChainTimeOperations;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 public class RunAnalysis {
@@ -30,8 +35,27 @@ public class RunAnalysis {
 		
 		ProcessChainGeneration generator = new ProcessChainGeneration();
 		ArrayList<String> generatedChains = generator.ProcessChainBuild(pohResult);
+		
+		/**
+		 * sortAlgorithm - Possible values: 
+		 * 1 - Sort by total number chain 
+		 * 2 - Sort by the number of times the chain can be found within the listed chains 
+		 * 3 - Sort by the number of sub chains that can be found within the listed chains 
+		 * 4 - Sort by the number of contained chains excluding the process chains itself 
+		 * 5 - Sort by the number of sub chains excluding the process chains itself.
+		 */
+		int sortAlgorithm = 3;
+		int numMainChains = 4;
 		ProcessChainCounter chainCounter = new ProcessChainCounter();
-		chainCounter.ProcessChainOperations(generatedChains);
+		Set<ProcessChainObject> mainProcessChains = chainCounter.ProcessChainOperations(generatedChains, sortAlgorithm, numMainChains);
+		
+		ProcessChainMainOperations operations = new ProcessChainMainOperations(mainProcessChains,generatedChains);
+		ProcessChainEvaluation evaluation = operations.chainResults();
+		
+		ProcessChainReconfiguration configuration = new ProcessChainReconfiguration(evaluation, generatedChains);
+		configuration.chainCombination();
+		
+		
 		
 		/*
 		ProcessChainTimeGeneration timeGenerator = new ProcessChainTimeGeneration();
