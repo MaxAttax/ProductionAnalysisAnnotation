@@ -29,7 +29,7 @@ public class ProcessChainReconfiguration {
 	}
 
 	public void chainCombination() {
-		
+
 		int chainCounter = 1;
 		workingChains = evaluation.getCurrentMainChains();
 		regularProcessChains = evaluation.getRegularProcessChains();
@@ -45,9 +45,9 @@ public class ProcessChainReconfiguration {
 				chainCounter++;
 			}
 		}
-		
+
 		LOGGER.info("\n\n\t\t\t\t\t   listed   regular   special\n");
-		for ( String chain : workingChains ) {
+		for (String chain : workingChains) {
 			int subChainCounter = 0;
 			int subRegularCounter = 0;
 			int subSpecialCounter = 0;
@@ -61,7 +61,7 @@ public class ProcessChainReconfiguration {
 					subRegularCounter++;
 				}
 			}
-			for (String processChain : regularProcessChains) {
+			for (String processChain : specialProcessChains) {
 				if (chain.contains(processChain)) {
 					subRegularCounter++;
 				}
@@ -69,7 +69,7 @@ public class ProcessChainReconfiguration {
 			LOGGER.info(chain + "\t\t\t    " + subChainCounter + "\t     "
 					+ subRegularCounter + "       " + subSpecialCounter);
 		}
-		
+
 		LOGGER.info("\n\n\t\t\t\t\t   listed   regular   special\n");
 		for (String chain : combinedChains) {
 			int subChainCounter = 0;
@@ -85,7 +85,7 @@ public class ProcessChainReconfiguration {
 					subRegularCounter++;
 				}
 			}
-			for (String processChain : regularProcessChains) {
+			for (String processChain : specialProcessChains) {
 				if (chain.contains(processChain)) {
 					subRegularCounter++;
 				}
@@ -95,14 +95,53 @@ public class ProcessChainReconfiguration {
 		}
 	}
 
-
 	public void chainReformation() {
-		
-		
-		
+
+		int chainCounter = 1;
+		int distinctChainIndex = 0;
+
+		ArrayList<Integer> countSpecialChains = new ArrayList<Integer>();
+		ArrayList<Integer> subSpecialChains = new ArrayList<Integer>();
+
+		workingChains = evaluation.getCurrentMainChains();
+		regularProcessChains = evaluation.getRegularProcessChains();
+		specialProcessChains = evaluation.getSpecialProcessChains();
+
+		ArrayList<String> distinctSpecialChains = new ArrayList<String>();
+
+		/**
+		 * Calculation of distinct special Chains
+		 */
+
+		for (String chain : specialProcessChains) {
+			if (distinctSpecialChains.contains(chain) == false) {
+				distinctSpecialChains.add(distinctChainIndex, chain);
+				distinctChainIndex++;
+			}
+		}
+
+		for (String specialChain : distinctSpecialChains) {
+			int countSpecialChain = 0;
+			int subSpecialChain = 0;
+			for (String chain : specialProcessChains) {
+				if (specialChain.equals(chain)) {
+					countSpecialChain++;
+				}
+				if (specialChain.contains(chain)) {
+					subSpecialChain++;
+				}
+			}
+			countSpecialChains.add(countSpecialChain);
+			subSpecialChains.add(subSpecialChain);
+		}
+
+		LOGGER.info("\n");
+		for (int i = 0; i < distinctSpecialChains.size(); i++) {
+			LOGGER.info( countSpecialChains.get(i) + "\t"
+					+ subSpecialChains.get(i) + "\t"
+					+ distinctSpecialChains.get(i));
+		}
+
 	}
-	
+
 }
-
-
-

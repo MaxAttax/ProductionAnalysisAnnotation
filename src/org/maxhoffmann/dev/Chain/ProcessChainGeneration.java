@@ -55,31 +55,7 @@ public class ProcessChainGeneration {
 			}
 		}
 		
-		
 		return listedChains;
-		
-		
-		/*
-		ArrayList<String> processChains = new ArrayList<String>();
-		int n = 0;	
-		
-		for ( int m = 0; m < listedChains.size(); m++ ) {
-			if ( processChains.contains(listedChains.get(m)) == false ) {
-				processChains.add(n, listedChains.get(m));
-				n++;
-			}
-		}
-		*/
-		
-		
-		/*
-		HashMap<Integer,String> mapProcessChains = new HashMap<Integer,String>();
-		
-		for ( n = 0; n < processChains.size(); n++ ) {
-			mapProcessChains.put(countProcessChains.get(n),processChains.get(n));
-			LOGGER.info(mapProcessChains.get(n));
-		}
-		*/
 		
 	}
 	

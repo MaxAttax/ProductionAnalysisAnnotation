@@ -54,7 +54,7 @@ public class RunAnalysis {
 		
 		ProcessChainReconfiguration configuration = new ProcessChainReconfiguration(evaluation, generatedChains);
 		configuration.chainCombination();
-		
+		configuration.chainReformation();
 		
 		
 		/*
