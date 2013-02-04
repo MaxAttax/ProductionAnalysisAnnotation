@@ -685,3 +685,248 @@ Regular Process Chains:	178	=>  82.790695 %	 of the products can be manufactured
 01/Feb/2013, 17:26:24 - 1280 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	9	R110-R160-R200-R200-R160-R160-R160-R160
 01/Feb/2013, 17:26:24 - 1280 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	9	R160-R160-R160-R160-R200-R200-R160
 01/Feb/2013, 17:26:24 - 1280 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	20	R160-R160-R160-R160-R200-R160-R160-R160-R160-R200-R200-R160
+04/Feb/2013, 10:15:40 - 0 [main] INFO   org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.3.1.GA
+04/Feb/2013, 10:15:40 - 15 [main] INFO   org.hibernate.cfg.Environment - Hibernate 3.2.5
+04/Feb/2013, 10:15:40 - 15 [main] INFO   org.hibernate.cfg.Environment - hibernate.properties not found
+04/Feb/2013, 10:15:40 - 15 [main] INFO   org.hibernate.cfg.Environment - Bytecode provider name : cglib
+04/Feb/2013, 10:15:40 - 31 [main] INFO   org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+04/Feb/2013, 10:15:40 - 78 [main] INFO   org.hibernate.cfg.Configuration - configuring from resource: /hibernate.cfg.xml
+04/Feb/2013, 10:15:40 - 78 [main] INFO   org.hibernate.cfg.Configuration - Configuration resource: /hibernate.cfg.xml
+04/Feb/2013, 10:15:40 - 140 [main] INFO   org.hibernate.cfg.Configuration - Configured SessionFactory: null
+04/Feb/2013, 10:15:40 - 140 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Mapping package org.maxhoffmann.dev.ProductionAnalysisAnnotation
+04/Feb/2013, 10:15:40 - 171 [main] WARN   org.hibernate.cfg.AnnotationBinder - Package not found or wo package-info.java: org.maxhoffmann.dev.ProductionAnalysisAnnotation
+04/Feb/2013, 10:15:40 - 218 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project
+04/Feb/2013, 10:15:41 - 249 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Project on table project
+04/Feb/2013, 10:15:41 - 296 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material
+04/Feb/2013, 10:15:41 - 296 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Material on table material
+04/Feb/2013, 10:15:41 - 296 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order
+04/Feb/2013, 10:15:41 - 296 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.Order on table order
+04/Feb/2013, 10:15:41 - 312 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup
+04/Feb/2013, 10:15:41 - 312 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroup on table resourcegroup
+04/Feb/2013, 10:15:41 - 312 [main] INFO   org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory
+04/Feb/2013, 10:15:41 - 312 [main] INFO   org.hibernate.cfg.annotations.EntityBinder - Bind entity org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProductionOrderHistory on table productionorderhistory
+04/Feb/2013, 10:15:41 - 359 [main] INFO   org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+04/Feb/2013, 10:15:41 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+04/Feb/2013, 10:15:41 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 1
+04/Feb/2013, 10:15:41 - 359 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: false
+04/Feb/2013, 10:15:41 - 374 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_fp_max
+04/Feb/2013, 10:15:41 - 374 [main] INFO   org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {user=dataintegrator, password=****}
+04/Feb/2013, 10:15:41 - 608 [main] INFO   org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.5.28
+04/Feb/2013, 10:15:41 - 608 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.transaction.TransactionFactoryFactory - Using default transaction strategy (direct JDBC transactions)
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Query cache: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Cache provider: org.hibernate.cache.NoCacheProvider
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+04/Feb/2013, 10:15:41 - 624 [main] INFO   org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+04/Feb/2013, 10:15:41 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Statistics: disabled
+04/Feb/2013, 10:15:41 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+04/Feb/2013, 10:15:41 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+04/Feb/2013, 10:15:41 - 639 [main] INFO   org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+04/Feb/2013, 10:15:41 - 655 [main] INFO   org.hibernate.impl.SessionFactoryImpl - building session factory
+04/Feb/2013, 10:15:41 - 873 [main] INFO   org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+04/Feb/2013, 10:15:41 - 873 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - Running schema validator
+04/Feb/2013, 10:15:41 - 873 [main] INFO   org.hibernate.tool.hbm2ddl.SchemaValidator - fetching database metadata
+04/Feb/2013, 10:15:41 - 921 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.order
+04/Feb/2013, 10:15:41 - 921 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [orderno, ordertype, orderid, materialid]
+04/Feb/2013, 10:15:41 - 937 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.material
+04/Feb/2013, 10:15:41 - 937 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [description, materialno, materialid]
+04/Feb/2013, 10:15:41 - 968 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.productionorderhistory
+04/Feb/2013, 10:15:41 - 968 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [operationtime, resourcegroupid, startproduction, workplanno, orderid, productionorderhistoryid]
+04/Feb/2013, 10:15:41 - 984 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.project
+04/Feb/2013, 10:15:41 - 984 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [status, projectid]
+04/Feb/2013, 10:15:41 - 999 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - table found: test_fp_max.resourcegroup
+04/Feb/2013, 10:15:41 - 999 [main] INFO   org.hibernate.tool.hbm2ddl.TableMetadata - columns: [resourcegroupid, description, label, projectid]
+04/Feb/2013, 10:15:41 - 1155 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProjectDAO - 
+
+04/Feb/2013, 10:15:41 - 1155 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProjectDAO - ID: 1  Projektstatus: Project01
+04/Feb/2013, 10:15:41 - 1155 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ProjectDAO - ID: 2  Projektstatus: Pro02
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - 
+
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 1  Material No: 6299915  Description: ELETRODENHALTER_15MM
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 2  Material No: 6259446  Description: STEMPEL-SCHNITT-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 3  Material No: 6284576  Description: STEMPEL-SCHNITT-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 4  Material No: 6316563  Description: PLATTEN-DRUCK
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 5  Material No: 6316608  Description: PLATTEN-DRUCK
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 6  Material No: 6308136  Description: EINSATZ-PRAEGE-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 7  Material No: 6316690  Description: PLATTEN-ANBAU-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 8  Material No: 6316775  Description: PLATTEN-AUFBAU-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 9  Material No: 6226147  Description: STEMPEL-SCHNITT-
+04/Feb/2013, 10:15:41 - 1171 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.MaterialDAO - ID: 10  Material No: 6016325  Description: EINSATZ-SCHNITT-
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - 
+
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 1  Order No: 15184661  Order Type: PX06  Material ID (FK): 1
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 2  Order No: 15184662  Order Type: PX06  Material ID (FK): 2
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 3  Order No: 15184663  Order Type: PX06  Material ID (FK): 3
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 4  Order No: 15184664  Order Type: PX06  Material ID (FK): 4
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 5  Order No: 15184665  Order Type: PX06  Material ID (FK): 5
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 6  Order No: 15184666  Order Type: PX06  Material ID (FK): 6
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 7  Order No: 15184667  Order Type: PX06  Material ID (FK): 7
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 8  Order No: 15184668  Order Type: PX06  Material ID (FK): 8
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 9  Order No: 15184669  Order Type: PX06  Material ID (FK): 9
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.OrderDAO - ID: 10  Order No: 15184670  Order Type: PX06  Material ID (FK): 10
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - 
+
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 1  Projekt-ID: 1  Label: R110  Description: sawing
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 2  Projekt-ID: 1  Label: R160  Description: milling
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 3  Projekt-ID: 2  Label: R150  Description: drilling
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 4  Projekt-ID: 1  Label: R310  Description: assembling
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 5  Projekt-ID: 2  Label: R340  Description: quality controlling
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 6  Projekt-ID: 1  Label: R200  Description: grinding
+04/Feb/2013, 10:15:41 - 1186 [main] INFO   org.maxhoffmann.dev.ProductionAnalysisAnnotation.ResourceGroupDAO - ID: 7  Projekt-ID: 1  Label: R140  Description: turning
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainGeneration - 
+
+Prozessketten-Analyse:
+
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Maximum Chain Length: 13
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Anzahl der Prozessketten:
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 1er-Kette:	73	 Anteil an Gesamtzahl:  33.953487 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 2er-Kette:	44	 Anteil an Gesamtzahl:  20.465117 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 3er-Kette:	21	 Anteil an Gesamtzahl:  9.767442 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 4er-Kette:	53	 Anteil an Gesamtzahl:  24.651163 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 5er-Kette:	11	 Anteil an Gesamtzahl:  5.116279 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 6er-Kette:	4	 Anteil an Gesamtzahl:  1.860465 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 7er-Kette:	3	 Anteil an Gesamtzahl:  1.3953488 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 8er-Kette:	1	 Anteil an Gesamtzahl:  0.46511626 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 9er-Kette:	2	 Anteil an Gesamtzahl:  0.9302325 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 10er-Kette:	1	 Anteil an Gesamtzahl:  0.46511626 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 11er-Kette:	0	 Anteil an Gesamtzahl:  0.0 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 12er-Kette:	1	 Anteil an Gesamtzahl:  0.46511626 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 13er-Kette:	1	 Anteil an Gesamtzahl:  0.46511626 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 
+Total number of chains: 215
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Nach der 5. Kette: Kumulierte 93.95348764955997 %
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Anteil der 5. Kette: 5.116279 %
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Start-Kette:	0.05116279
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - End-Kette:	0.24651162
+
+
+04/Feb/2013, 10:15:42 - 1483 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Actual Percentage Index: 4
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Prozessketten-Nr.:      Count 	Contain	 Sub	 DiffCon  DiffSub
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 1.	Prozesskette:	37	51	 142	 14	  105	  R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 2.	Prozesskette:	1	10	 44	 9	  43	  R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 3.	Prozesskette:	3	15	 100	 12	  97	  R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 4.	Prozesskette:	7	20	 126	 13	  119	  R160-R160-R200-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 5.	Prozesskette:	1	9	 111	 8	  110	  R200-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 6.	Prozesskette:	1	11	 106	 10	  105	  R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 7.	Prozesskette:	1	2	 100	 1	  99	  R160-R200-R200-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 8.	Prozesskette:	2	7	 106	 5	  104	  R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Sorted ProcessChains:   Count 	Contain	 Sub	 DiffCon  DiffSub
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			37	51	 142	 14	  105	  R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			7	20	 126	 13	  119	  R160-R160-R200-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			1	9	 111	 8	  110	  R200-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			1	11	 106	 10	  105	  R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			2	7	 106	 5	  104	  R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			3	15	 100	 12	  97	  R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			1	2	 100	 1	  99	  R160-R200-R200-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 			1	10	 44	 9	  43	  R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - Prozessketten:
+
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 1.	Prozesskette:	24	145	 24	 121	  0	  R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 2.	Prozesskette:	49	171	 49	 122	  0	  R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 3.	Prozesskette:	1	4	 150	 3	  149	  R160-R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 4.	Prozesskette:	7	70	 99	 63	  92	  R160-R160-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 5.	Prozesskette:	1	1	 110	 0	  109	  R110-R160-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 6.	Prozesskette:	37	51	 142	 14	  105	  R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 7.	Prozesskette:	17	48	 66	 31	  49	  R200-R200
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 8.	Prozesskette:	2	8	 135	 6	  133	  R160-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 9.	Prozesskette:	13	102	 37	 89	  24	  R160-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 10.	Prozesskette:	4	34	 77	 30	  73	  R200-R160
+04/Feb/2013, 10:15:42 - 1498 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainCounter - 
+...	...	...	insgesamt 42 Ketten.
+
+
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - Hauptprozessketten (A PRIORI):
+
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 1.	Prozesskette:  R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 2.	Prozesskette:  R160-R160-R200-R200
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 3.	Prozesskette:  R200-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 4.	Prozesskette:  R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1514 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 
+Regular Process Chains:	178	=>  82.790695 %	 of the products can be manufactured using the main process chains.
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - Special Process Chains:	37	=>  17.209303 %	 can not be manufactured using the current configuration.
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainMainOperations - 
+
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1. kombinierte Kette:	K1-K2	R160-R160-R160-R200-R160-R160-R200-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 2. kombinierte Kette:	K1-K3	R160-R160-R160-R200-R200-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 3. kombinierte Kette:	K1-K4	R160-R160-R160-R200-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 4. kombinierte Kette:	K2-K3	R160-R160-R200-R200-R200-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 5. kombinierte Kette:	K2-K4	R160-R160-R200-R200-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 6. kombinierte Kette:	K3-K4	R200-R200-R160-R160-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 
+
+					   listed   regular   special
+
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R160-R200			    142	     142       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R200-R200			    126	     126       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R200-R200-R160-R160			    111	     111       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R200-R200-R160			    106	     106       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 
+
+					   listed   regular   special
+
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R160-R200-R160-R160-R200-R200	    179	     179       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R160-R200-R200-R200-R160-R160	    182	     182       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R160-R200-R160-R200-R200-R160	    173	     173       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R200-R200-R200-R200-R160-R160	    135	     135       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R160-R160-R200-R200-R160-R200-R200-R160	    135	     135       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - R200-R200-R160-R160-R160-R200-R200-R160	    188	     188       0
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 
+
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	4	R160-R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	7	R110-R160-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 2	2	R160-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	1	R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 3	3	R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	13	R160-R160-R160-R200-R200-R200-R200-R200-R160-R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 4	4	R110-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	5	R200-R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	5	R160-R200-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	10	R160-R160-R160-R200-R200-R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	8	R160-R160-R200-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	16	R160-R160-R160-R200-R200-R160-R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	13	R160-R160-R160-R200-R200-R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	6	R200-R160-R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	7	R160-R160-R160-R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	1	R160-R200-R200-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 4	4	R160-R160-R160-R200-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	5	R160-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	1	R160-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	4	R200-R200-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	5	R160-R160-R160-R200-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	2	R160-R160-R160-R160-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	1	R110-R160-R200
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 2	3	R160-R160-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	9	R110-R160-R200-R200-R160-R160-R160-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	9	R160-R160-R160-R160-R200-R200-R160
+04/Feb/2013, 10:15:42 - 1530 [main] INFO   org.maxhoffmann.dev.Chain.ProcessChainReconfiguration - 1	20	R160-R160-R160-R160-R200-R160-R160-R160-R160-R200-R200-R160
